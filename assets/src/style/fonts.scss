@@ -1,0 +1,32 @@
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+	font-family: "Banny";
+	// адрес шрифта и тип
+	src: url("../fonts/banny-cufonfonts/Banny-Round.otf") format("opentype");
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+	font-family: "OpenSans";
+	// адрес шрифта и тип
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+	font-family: "OpenSansBold";
+	// адрес шрифта и тип
+	src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+}
+// @font-face {
+// 	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+// 	font-family: "Europa";
+// 	// адрес шрифта и тип
+// 	src: url("../fonts/europanuovaextrabold.ttf") format("truetype"),
+// 		 url("../fonts/europanuovaextrabold.eot") format("eot"),
+// 		 url("../fonts/europanuovaextrabold.woff") format("woff");
+// 	font-style: normal;
+// 	font-weight: 900;
+// }
+
+
