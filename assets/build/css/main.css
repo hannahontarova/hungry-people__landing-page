@@ -7468,7 +7468,8 @@ body {
   font-size: 14px; }
 
 .section {
-  padding: 3em 0; }
+  padding: 3em 0;
+  width: 100%; }
   .section__header {
     letter-spacing: 5px; }
   .section__img {
@@ -7486,17 +7487,35 @@ body {
   .section__masterchef {
     background-repeat: no-repeat;
     background-position: 100% center;
+    background-size: 100%;
     padding: 50px 0;
     background-image: url("../img/specialtys-bg.png");
     color: #fff; }
   .section__bottom--text {
-    color: #333333; }
+    color: #4e4e4e;
+    margin-bottom: 3em; }
+    .section__bottom--text span {
+      font-weight: 900; }
   .section__specialties {
     background-repeat: no-repeat;
     background-position: 100% center;
+    background-size: 100%;
     padding: 50px 0;
     background-image: url("../img/specialtys-bg1.png");
     color: #fff; }
+  .section__menu {
+    margin: 3em 0; }
+  .section__private {
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 100%;
+    padding: 50px 0;
+    background-image: url("../img/specialtys-bg1.png");
+    color: #fff; }
+
+.menu__item {
+  color: #7e7d7d;
+  font-size: 10px; }
 
 .title__medium {
   font-family: "Banny", sans-serif;
@@ -7510,6 +7529,11 @@ body {
     margin-top: 0.5em;
     position: absolute;
     left: 46%; }
+
+.title__small {
+  font-family: "Banny", sans-serif;
+  font-size: 17px;
+  line-height: 1px; }
 
 .subtitle__original {
   font-family: "OpenSansBold", sans-serif;
@@ -7541,5 +7565,29 @@ body {
   border: 1px solid #E5E5E5;
   border-radius: 3px;
   font-size: 12px;
-  color: #333333;
+  color: #4e4e4e;
   margin-bottom: 0.5em; }
+
+.food__specify {
+  padding-right: 1em;
+  border-right: #4e4e4e 1px solid;
+  font-family: "OpenSansBold", sans-serif;
+  color: #4e4e4e;
+  font-size: 14px;
+  margin: 3em 0; }
+  .food__specify:last-child {
+    border-right: none; }
+
+.private__text {
+  background-color: black;
+  color: #fff;
+  font-family: "Banny", sans-serif;
+  transform: rotate(90deg);
+  padding: 1em; }
+
+.navbar-nav-custom {
+  width: calc(50%-75px);
+  justify-content: space-between; }
+
+.first {
+  height: 100vh; }

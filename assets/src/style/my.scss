@@ -1,6 +1,9 @@
-$fontFamily: 'OpenSans', sans-serif;
-$fontBold: 'OpenSansBold', sans-serif;
-$fontBanny: 'Banny', sans-serif;
+$fontFamily: 'OpenSans',
+sans-serif;
+$fontBold: 'OpenSansBold',
+sans-serif;
+$fontBanny: 'Banny',
+sans-serif;
 $font: 14px;
 $fontSubTitle: 36px;
 $fontTitle: 96px;
@@ -8,105 +11,162 @@ $colorLight: #fff;
 $colorDark: #000;
 $colorOrange: #E8C300;
 $colorForm: #E5E5E5;
-$colorText: #333333;
-
+$colorText: #4e4e4e;
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 html {
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 body {
-	font-family: $fontFamily;
-	font-size: $font;
+    font-family: $fontFamily;
+    font-size: $font;
 }
+
 //Global properties
 .section {
-		padding: 3em 0;
-		&__header{
-			letter-spacing: 5px;
-		}
-		&__img{
-			display: flex;
-			.rectangle{
-				position: absolute;
-				z-index: 2;
-				top: 10%;
-				left: 54%;
-				&--left{
-					position: absolute;
-						z-index: 2;
-						top: 10%;
-						right: 54%;
-				}
-			}
-		}
-		&__masterchef{
-			background-repeat: no-repeat;
-			background-position: 100% center;
-			padding: 50px 0;
-			background-image: url('../img/specialtys-bg.png');
-			color: $colorLight;
-		}
-		&__bottom--text{
-			color: $colorText;
-		}
-		&__specialties{
-			background-repeat: no-repeat;
-			background-position: 100% center;
-			padding: 50px 0;
-			background-image: url('../img/specialtys-bg1.png');
-			color: $colorLight;
-		}
-	}
-.title__medium{
-	font-family: $fontBanny;
-	padding-bottom: 1em;
-	&::after{
-		content: "";
-		height: 3px;
-		width: 10%;
-		background-color: $colorOrange;
-		display: block;
-		margin-top: 0.5em;
-		position: absolute;
-    	left: 46%;
-	}
+    padding: 3em 0;
+    width: 100%;
+    &__header {
+        letter-spacing: 5px;
+    }
+    &__img {
+        display: flex;
+        .rectangle {
+            position: absolute;
+            z-index: 2;
+            top: 10%;
+            left: 54%;
+            &--left {
+                position: absolute;
+                z-index: 2;
+                top: 10%;
+                right: 54%;
+            }
+        }
+    }
+    &__masterchef {
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        background-size: 100%;
+        padding: 50px 0;
+        background-image: url('../img/specialtys-bg.png');
+        color: $colorLight;
+    }
+    &__bottom--text {
+        color: $colorText;
+        margin-bottom: 3em;
+        span {
+            font-weight: 900;
+        }
+    }
+    &__specialties {
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        background-size: 100%;
+        padding: 50px 0;
+        background-image: url('../img/specialtys-bg1.png');
+        color: $colorLight;
+    }
+    &__menu {
+        margin: 3em 0;
+    }
+    &__private {
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        background-size: 100%;
+        padding: 50px 0;
+        background-image: url('../img/specialtys-bg1.png');
+        color: $colorLight;
+    }
 }
-.subtitle__original{
-	font-family: $fontBold;
-	padding-bottom: 1em;
+
+.menu__item {
+    color: #7e7d7d;
+    font-size: 10px;
 }
-.form__btn{
-	width: 100%;
-	border: 1px solid $colorOrange;
-	background-color: $colorOrange;
-	color: #fff;
-	text-transform: uppercase;
-	border-radius: 3px;
-	padding: 1em;
+
+.title__medium {
+    font-family: $fontBanny;
+    padding-bottom: 1em;
+    &::after {
+        content: "";
+        height: 3px;
+        width: 10%;
+        background-color: $colorOrange;
+        display: block;
+        margin-top: 0.5em;
+        position: absolute;
+        left: 46%;
+    }
 }
-.form__input{
-	height: 40px;
-	width: 98%;
-	background-color: $colorForm;
-	border: 1px solid $colorForm;
-	border-radius: 3px;
-	font-size: 12px;
-	color: #333333;
-	margin-bottom: 0.5em;
+
+.title__small {
+    font-family: $fontBanny;
+    font-size: 17px;
+    line-height: 1px;
 }
-.form__choose{
-	height: 40px;
-	width: 98%;
-	background-color: $colorForm;
-	border: 1px solid $colorForm;
-	border-radius: 3px;
-	font-size: 12px;
-	color: $colorText;
-	margin-bottom: 0.5em;
+
+.subtitle__original {
+    font-family: $fontBold;
+    padding-bottom: 1em;
 }
+
+.form__btn {
+    width: 100%;
+    border: 1px solid $colorOrange;
+    background-color: $colorOrange;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.form__input {
+    height: 40px;
+    width: 98%;
+    background-color: $colorForm;
+    border: 1px solid $colorForm;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 0.5em;
+}
+
+.form__choose {
+    height: 40px;
+    width: 98%;
+    background-color: $colorForm;
+    border: 1px solid $colorForm;
+    border-radius: 3px;
+    font-size: 12px;
+    color: $colorText;
+    margin-bottom: 0.5em;
+}
+
+.food__specify {
+    padding-right: 1em;
+    border-right: $colorText 1px solid;
+    font-family: $fontBold;
+    color: $colorText;
+    font-size: 14px;
+    margin: 3em 0;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.private__text {
+    background-color: black;
+    color: $colorLight;
+    font-family: $fontBanny;
+    transform: rotate(90deg);
+    padding: 1em;
+}
+
 // a {
 // 	color: inherit;
 // 	&:hover {
@@ -225,7 +285,6 @@ body {
 // 			bottom: -5px;
 // 			left: 0;
 // 			background: $colorOrange;
-
 // 		}
 // 	}
 // }
@@ -361,7 +420,6 @@ body {
 // 	&:focus {
 // 		outline: none;
 // 	}
-
 // }
 // .navbar-toggler-icon {
 // 	font-size: $fontLong;
@@ -536,3 +594,7 @@ body {
 // 		}
 // 	}
 // }
+@import "navbar";
+.first {
+    height: 100vh;
+}
