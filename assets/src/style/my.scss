@@ -16,12 +16,18 @@ body {
 section {
     margin: 3em 0;
     width: 100%;
-    // overflow-x: hidden;
     &:first-child {
         margin: 0;
     }
 }
 
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: $colorText;
+    span {
+        font-family: $fontBold;
+    }
+}
 .section {
     &__first {
         background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 20%, rgba(255,255,255,0.1) 20%, rgba(255,255,255,0.1) calc(20% + 1px), rgba(0,0,0,0.6) calc(20% + 1px), rgba(0,0,0,0.6) 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) calc(50% + 1px), rgba(0,0,0,0.6) calc(50% + 1px), rgba(0,0,0,0.6) 80%, rgba(255,255,255,0.1) 80%, rgba(255,255,255,0.1) calc(80% + 1px), rgba(0,0,0,0.6) calc(80% + 1px), rgba(0,0,0,0.6) 100%), url('../img/header-bg.png');
@@ -29,6 +35,7 @@ section {
         background-position: 100% center;
         background-size: cover;
         height: 100vh;
+        color: #fff;
     }
     &__header {
         letter-spacing: 7px;
@@ -57,7 +64,6 @@ section {
             border: 20px solid $colorOrange;
             border-radius: 4px;
             box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5);
-            // box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
             position: absolute;
             z-index: 2;
             top: 28%;
@@ -112,7 +118,25 @@ section {
         padding: 50px 0 0 0;
     }
 }
-
+// TEXT PROPERTIES
+.title__large{
+    font-family: $fontBanny;
+    font-size: 96px;
+    position: relative;
+    &::after {
+        content: "";
+        height: 5px;
+        width: 59px;
+        border-radius: 50px;
+        background-color: $colorOrange;
+        display: block;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
 .title__medium {
     font-family: $fontBannyBold;
     padding-bottom: 1em;
@@ -131,65 +155,108 @@ section {
         margin: 0 auto;
     }
 }
-
 .title__small {
     font-family: $fontBanny;
     font-size: 17px;
     line-height: 1px;
 }
-
+.subtitle__small {
+    font-family: $fontBold;
+    font-size: 10px;
+    letter-spacing: 7px;
+}
 .subtitle__original {
     font-family: $fontBold;
     padding-bottom: 1em;
 }
-
-.form__btn {
-    width: 100%;
-    border: 1px solid $colorOrange;
-    background-color: $colorOrange;
+// FORM ITEM'S PROPERTIES
+.btn{
     color: #fff;
     text-transform: uppercase;
     border-radius: 3px;
     padding: 1em;
     font-family: $fontBold;
-}
-.form__btn:hover{
-    border: 1px solid $colorOrange;
-    background-color: #fff;
-    color: $colorOrange;
-}
-.form__input {
-    height: 60px;
-    width: 98%;
-    background-color: $colorForm;
-    border: 1px solid $colorForm;
-    border-radius: 3px;
-    font-size: 12px;
-    margin: 0 0.2em 0.5em 0;
-    opacity: 0.7;
-    &::placeholder {
-        color: $colorText;
+    &__book{
+        width: 100%;
+        border: 1px solid $colorOrange;
+        background-color: $colorOrange;
+    }
+    &__explore{
+        width: 100%;
+        border: 1px solid $colorLight;
+        background-color: transparent;
     }
 }
-.form__input--rigth{
-    margin-right: 0;
-    margin-left: 0.3em;
+.form {
+    width: 100%;
+    &__btn {
+        border: 1px solid $colorOrange;
+        background-color: $colorOrange;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 1em;
+        font-family: $fontBold;
+        &:hover{
+            border: 1px solid $colorOrange;
+            background-color: #fff;
+            color: $colorOrange;
+        }
+    }
+    &__input {
+        height: 60px;
+        background-color: $colorForm;
+        border: 1px solid $colorForm;
+        border-radius: 3px;
+        font-size: 12px;
+        margin: 0 0.2em 0.5em 0;
+        opacity: 0.7;
+        &::placeholder {
+            color: $colorText;
+        }
+        &--right{
+            margin: 0 0 0.5em 0.3em;
+        }
+    }
+
+    &__choose {
+        height: 60px;
+        background-color: $colorForm;
+        border: 1px solid $colorForm;
+        border-radius: 3px;
+        font-size: 12px;
+        margin: 0 0 0.5em 0.3em;
+        padding: 0 10px;
+        color: $colorText;
+        opacity: 0.7;
+    }
+    &__textarea {
+        height: 120px;
+        background-color: $colorForm;
+        border: 1px solid $colorForm;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-bottom: 0.5em;
+        resize: none;
+        opacity: .7;
+        padding: 8px 16px;
+        &::placeholder {
+            color: $colorText;
+        }
+    }
 }
+// .form__input--right{
+//     margin: 0 0 0.5em 0.3em;
+// }
+// .form__btn:hover{
+//     border: 1px solid $colorOrange;
+//     background-color: #fff;
+//     color: $colorOrange;
+// }
 .input__width{
     width: 50%;
 }
-.form__choose {
-    height: 60px;
-    width: 98%;
-    background-color: $colorForm;
-    border: 1px solid $colorForm;
-    border-radius: 3px;
-    font-size: 12px;
-    margin: 0 0 0.5em 0.3em;
-    padding: 0 10px;
-    color: $colorText;
-    opacity: 0.7;
-}
+// MENU
 .menu__item {
     color: #7e7d7d;
     font-size: 10px;
@@ -208,7 +275,7 @@ section {
         border-right: none;
     }
 }
-
+// PRIVATE
 .private__text {
     background-color: black;
     color: $colorLight;
@@ -228,42 +295,14 @@ section {
         right: 0;
     }
 }
-
 .private__img {
     width: 100%;
     height: auto;
 }
-
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: $colorText;
-    span {
-        font-family: $fontBold;
-    }
-}
-
-.form__textarea {
-    height: 120px;
-    width: 100%;
-    background-color: $colorForm;
-    border: 1px solid $colorForm;
-    border-radius: 3px;
-    font-size: 12px;
-    margin-bottom: 0.5em;
-    resize: none;
-    opacity: .7;
-    padding: 8px 16px;
-    &::placeholder {
-        color: $colorText;
-    }
-}
-
+// CONTACTS
 .contact__part{
     padding-right: 3rem;
 }
 .item__color {
     color: $colorOrange;
 }
-
-
-.first {}

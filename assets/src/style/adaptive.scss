@@ -59,16 +59,6 @@
             padding: 0;
             margin-bottom: 0.5em;
         }
-        .food__specify{
-            margin: 0.5em 0;
-            font-size: 11px;
-        }
-        .menu__part{
-            margin-bottom: 0.5em;
-        }
-        .menu__item {
-            margin-bottom: 0;
-        }
         .text__center{
             text-align: center;
         }
@@ -95,6 +85,17 @@
         }
         .input__width{
             width: 100%;
+        }
+        // MENU
+        .food__specify{
+            margin: 0.5em 0;
+            font-size: 11px;
+        }
+        .menu__part{
+            margin-bottom: 0.5em;
+        }
+        .menu__item {
+            margin-bottom: 0;
         }
         // PRIVATE
         .private__text{
