@@ -11,25 +11,33 @@
         //= template/navbar.html
     </header>
     <main>
-        <section class="section__first">
+        <section class="section__first section__background">
             <div class="container">
-                <div class="first">
-                    <div>Hungy people</div>
+                <div class="first d-flex justify-content-center flex-column align-items-center">
+                    <div class="">
+                        <svg width="150" height="150">
+                            <use href="#rule" fill="#FFD600"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1>Hungy people</h1>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section__about">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center d-flex align-items-center">
+                <div class="row section__about--ipad">
+                    <div class="col-lg-6 col-md-6 text-center d-flex align-items-center">
                         <div class="section__text">
                             <h3 class="text-uppercase title__medium">about us</h3>
                             <div class="subtitle__original">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
                             </div>
-                            <div>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                            <div>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat
+                                diam convallis pharetra. Nulla facilisis semper laoreet.</div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-6">
                         <div class="section__img">
                             <img class="img__item" src="img/about-img.png" alt="">
                             <div class="rectangle"></div>
@@ -42,20 +50,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-uppercase text-center fw-bold section__header">
+                        <div class="text-uppercase text-center section__header">
                             Our Team
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5 ">
-                        <div class="section__img">
+                <div class="row order__reverse">
+                    <div class="col-lg-5 offset-1 offset__delete">
+                        <div class="section__img ">
                             <img class="img__item" src="img/cheif.png" alt="">
                             <div class="rectangle rectangle--left"></div>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center d-flex align-items-center">
-                        <div class="section__text">
+                        <div class="section__text section__text--right ">
                             <h3 class="text-uppercase title__medium">Master chef</h3>
                             <div class="subtitle__original">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
                             </div>
@@ -69,18 +77,18 @@
         <section class="section__book">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 text-center d-flex align-items-center justify-content-center">
-                        <div>
+                    <div class="col-lg-5 col-md-6 text-center d-flex align-items-center justify-content-center">
+                        <div class="w-100">
                             <h3 class="text-uppercase title__medium text-center">Book a table</h3>
-                            <form action="">
-                                <div class="d-flex justify-content-around">
-                                    <div class="d-flex flex-column">
+                            <form action="" id="form">
+                                <div class="d-flex justify-content-around order__column">
+                                    <div class="d-flex flex-column justify-content-between input__width">
                                         <input class="form-control form-control-lg form__input" type="text" placeholder="Name" aria-label=".form-control-lg example">
                                         <input class="form-control form-control-lg form__input" type="text" placeholder="Phone" aria-label=".form-control-lg example">
                                         <input class="form-control form-control-lg form__input" type="text" placeholder="Date(mm/dd)" aria-label=".form-control-lg example">
                                     </div>
-                                    <div class="d-flex flex-column">
-                                        <input class="form-control form-control-lg form__input" type="text" placeholder="Email" aria-label=".form-control-lg example">
+                                    <div class="d-flex flex-column justify-content-between input__width">
+                                        <input class="form-control form-control-lg form__input form__input--rigth" type="text" placeholder="Email" aria-label=".form-control-lg example">
                                         <select class="form-select form__choose" aria-label="Default select example">
 											<option selected>People</option>
 											<option value="1">One</option>
@@ -95,11 +103,11 @@
 										</select>
                                     </div>
                                 </div>
-                                <button class="form__btn">book now</button>
+                                <button class="form__btn" id="btnBook">book now</button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 offset-1 col-md-6 offset__delete">
                         <div class="section__img">
                             <img class="img__item" src="img/watch.png" alt="">
                             <div class="rectangle"></div>
@@ -124,15 +132,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5 ">
+                <div class="row order__reverse ">
+                    <div class="col-lg-5 offset-1 offset__delete">
                         <div class="section__img">
                             <img class="img__item" src="img/food.png" alt="">
                             <div class="rectangle rectangle--left"></div>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center d-flex align-items-center">
-                        <div class="section__text">
+                        <div class="section__text section__text--right">
                             <h3 class="text-uppercase title__medium">Chocolate Pancakes</h3>
                             <div class="subtitle__original">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
                             </div>
@@ -162,8 +170,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="d-flex justify-content-around">
+                    <div class="col-lg-12 text-center">
+                        <div class="d-flex justify-content-around horizontal__scroll">
                             <h2 class="food__specify text-uppercase">soupe</h2>
                             <h2 class="food__specify text-uppercase">pizza</h2>
                             <h2 class="food__specify text-uppercase">pasta</h2>
@@ -174,93 +182,93 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="mb-4">
+                <div class="row vertical__scroll">
+                    <div class="col-lg-4 text__center ">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
-                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="mb-4">
+                    <div class="col-lg-4 text__center">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
-                        <div class="mb-4">
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text__center">
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
+                            <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
+                            <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
+                        </div>
+                        <div class="menu__part">
                             <h4 class="title__small">PIZZA QUATRO STAGIONI . . . . 55,68 USD</h4>
                             <p class="menu__item">Integer ullamcorper neque eu purus euismod</p>
                         </div>
@@ -278,7 +286,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-5 ">
+                    <div class="col-lg-5 offset-1 offset__delete">
                         <div class="section__img">
                             <img class="img__item" src="img/rings.png" alt="">
                             <div class="rectangle rectangle--left"></div>
@@ -289,7 +297,7 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-2">
+                    <div class="col-lg-5 offset-1 offset__delete">
 
                         <div class="section__img">
                             <div class="private__text private__text--rotate">
@@ -304,7 +312,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-center section__bottom--text">
+                        <div class="text-center section__bottom--text-private">
                             For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the contact form.
                         </div>
                     </div>
@@ -312,17 +320,17 @@
             </div>
         </section>
         <div class="container-fluid p-0">
-            <div class="row m-0">
-                <div class="col-lg-3 p-0">
+            <div class="m-0 d-flex justify-content-center">
+                <div class="p-0">
                     <img class="private__img" src="img/private1.png" alt="">
                 </div>
-                <div class="col-lg-3 p-0">
+                <div class="p-0">
                     <img class="private__img" src="img/private2.png" alt="">
                 </div>
-                <div class="col-lg-3 p-0">
+                <div class="p-0">
                     <img class="private__img" src="img/private3.png" alt="">
                 </div>
-                <div class="col-lg-3 p-0">
+                <div class="p-0">
                     <img class="private__img" src="img/private4.png" alt="">
                 </div>
             </div>
@@ -341,8 +349,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <form action="">
-                            <div class="d-flex justify-content-around flex-column">
-                                <div class="d-flex">
+                            <div class="d-flex justify-content-around flex-column ">
+                                <div class="d-flex order__column">
                                     <input class="form-control form-control-lg form__input" type="text" placeholder="Name" aria-label=".form-control-lg">
                                     <input class="form-control form-control-lg form__input" type="text" placeholder="Email" aria-label=".form-control-lg">
                                     <input class="form-control form-control-lg form__input" type="text" placeholder="Phone" aria-label=".form-control-lg">
@@ -350,20 +358,17 @@
                                 <div>
                                     <textarea class="form-control form__textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                                 </div>
-                                <div class="d-flex align-items-center justify-content-around">
-                                    <div class="pr-5 mb-0">
+                                <div class="d-flex align-items-center justify-content-around order__reverse">
+                                    <div class="mb-0 contact__part">
                                         <ul class="list-inline flex-fill">
                                             <li class="list-inline-item menu__item pr-2">
-                                                <i class="fas fa-map-marker-alt item__color pr-2"> </i>
-                                                5th London Boulevard, U.K.
+                                                <i class="fas fa-map-marker-alt item__color pr-2"> </i> 5th London Boulevard, U.K.
                                             </li>
                                             <li class="list-inline-item menu__item pr-2">
-                                                <i class="fas fa-phone item__color pr-2"></i>
-                                                +40 729 131 637/+40 726 458 782
+                                                <i class="fas fa-phone item__color pr-2"></i> +40 729 131 637/+40 726 458 782
                                             </li>
                                             <li class="list-inline-item menu__item">
-                                                <i class="fas fa-envelope item__color pr-2"></i>
-                                                office@mindblister.com
+                                                <i class="fas fa-envelope item__color pr-2"></i> office@mindblister.com
                                             </li>
                                         </ul>
                                     </div>
@@ -376,21 +381,23 @@
                     </div>
                 </div>
         </section>
-        <div id="map" style="width:100%;height:400px;"></div>
+        <!-- <div id="map" style="width:100%;height:400px;"></div>
         <script>
-        function myMap() {
-        let mapCanvas = document.getElementById("map");
-        let mapOptions = {
-            center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-        };
-        let map = new google.maps.Map(mapCanvas, mapOptions);
-        }
-        </script>
+            function myMap() {
+                let mapCanvas = document.getElementById("map");
+                let mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.2),
+                    zoom: 10
+                };
+                let map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script> -->
     </main>
 
     //= template/footer.html
+    //= template/svg.html
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap" async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap" async defer></script> -->
 </body>
 
 </html>

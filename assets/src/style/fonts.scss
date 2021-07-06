@@ -3,8 +3,12 @@
 	font-family: "Banny";
 	// адрес шрифта и тип
 	src: url("../fonts/banny-cufonfonts/Banny-Round.otf") format("opentype");
-	font-style: normal;
-	font-weight: 600;
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+	font-family: "BannyBold";
+	// адрес шрифта и тип
+	src: url("../fonts/banny-cufonfonts/Banny-BoldRound.otf") format("opentype");
 }
 @font-face {
 	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
